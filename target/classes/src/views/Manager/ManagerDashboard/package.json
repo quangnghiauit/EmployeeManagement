@@ -1,6 +1,0 @@
-{
-  "name": "ManagerDashboard",
-  "version": "0.0.0",
-  "private": true,
-  "main": "./ManagerDashboard.js"
-}

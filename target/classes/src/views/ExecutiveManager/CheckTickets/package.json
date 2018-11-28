@@ -1,6 +1,0 @@
-{
-  "name": "CheckTickets",
-  "version": "0.0.0",
-  "private": true,
-  "main": "./CheckTickets.js"
-}

@@ -1,6 +1,0 @@
-{
-  "name": "ReviewsManager",
-  "version": "0.0.0",
-  "private": true,
-  "main": "./ReviewsManager.js"
-}
