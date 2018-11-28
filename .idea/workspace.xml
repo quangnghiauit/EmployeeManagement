@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1b89f697-0e49-40b1-b9b6-1fd8f80935ac" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_2_7_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_47.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_7_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_7_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_34.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_34.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_34.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_2_17_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_13_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_22_0_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_3_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_15_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_bson_3_6_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_3_6_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_core_3_6_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_mongodb_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_0_11_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_core_1_0_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_0_11_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_mongodb_2_0_11_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_1_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_1_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_1_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_springsecurity4_3_0_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/.babelrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/REACT.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/img/avatars/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/img/avatars/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/img/avatars/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/img/avatars/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/img/avatars/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/img/avatars/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/img/avatars/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/img/avatars/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/img/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/img/logo-symbol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/_bootstrap-variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/_core-variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/_custom.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_animate.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_aside.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_avatars.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_badge.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_breadcrumb-menu.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_breadcrumb.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_callout.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_card.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_charts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_dropdown-menu-right.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_dropdown.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_footer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_input-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_layout.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_loading.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_mobile.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_modal.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_nav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_navbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_others.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_progress.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_rtl.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_sidebar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_switches.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_tables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_temp.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_typography.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_utilities.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_widgets.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/core.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/utilities/_background.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/utilities/_borders.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/utilities/_display.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/uikits/_uikits.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/uikits/email/_email.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/vendors/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/vendors/chart.js/chart.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/vendors/react-select/_components.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/vendors/react-select/_control.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/vendors/react-select/_menu.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/vendors/react-select/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/vendors/react-select/_multi.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/vendors/react-select/_select.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/vendors/react-select/_spinner.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scss/vendors/react-select/react-select.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/components/Aside/Aside.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/components/Aside/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/components/Breadcrumb/Breadcrumb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/components/Breadcrumb/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/components/Footer/Footer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/components/Footer/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/components/Header/Header.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/components/Header/HeaderDropdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/components/Header/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/components/Sidebar/Sidebar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/components/Sidebar/_nav.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/components/Sidebar/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/components/SidebarFooter/SidebarFooter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/components/SidebarFooter/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/components/SidebarForm/SidebarForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/components/SidebarForm/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/components/SidebarHeader/SidebarHeader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/components/SidebarHeader/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/components/SidebarMinimizer/SidebarMinimizer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/components/SidebarMinimizer/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/containers/Full/Full.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/containers/Full/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/routes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Dashboard/Dashboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Dashboard/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/views/ExecutiveManager/CheckTickets/CheckTickets.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/views/ExecutiveManager/CheckTickets/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/views/ExecutiveManager/ExeManAdd/ExeManAdd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/views/ExecutiveManager/ExeManAdd/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/views/ExecutiveManager/ExeManDashboard/ExeManDashboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/views/ExecutiveManager/ExeManDashboard/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/views/ExecutiveManager/ExeManUpdate/ExeManUpdate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/views/ExecutiveManager/ExeManUpdate/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/views/ExecutiveManager/ReviewsManager/ReviewsManager.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/views/ExecutiveManager/ReviewsManager/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Manager/ManagerAdd/ManagerAdd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Manager/ManagerAdd/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Manager/ManagerDashboard/ManagerDashboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Manager/ManagerDashboard/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Manager/ManagerReviews/ManagerReviews.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Manager/ManagerReviews/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Pages/Login/Login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Pages/Login/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Pages/Page404/Page404.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Pages/Page404/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Pages/Page500/Page500.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Pages/Page500/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Pages/Register/Register.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Pages/Register/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Worker/Account/Account.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Worker/Account/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Worker/Information/Information.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Worker/Information/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Worker/Reviews/Reviews.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Worker/Reviews/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webpack.config.js" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="39" />
+    <option name="y" value="27" />
+    <option name="width" value="654" />
+    <option name="height" value="741" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="ProjectApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="project" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="vn.zalopay.project.ProjectApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1b89f697-0e49-40b1-b9b6-1fd8f80935ac" name="Default Changelist" comment="" />
+      <created>1543398467193</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1543398467193</updated>
+      <workItem from="1543398468788" duration="624000" />
+      <workItem from="1543399964296" duration="74000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="698000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="39" y="25" width="1327" height="743" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25370803" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" visible="true" weight="0.32899022" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
