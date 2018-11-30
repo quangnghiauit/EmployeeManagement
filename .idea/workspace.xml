@@ -2,135 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b89f697-0e49-40b1-b9b6-1fd8f80935ac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/target/classes/.babelrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/REACT.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/img/avatars/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/img/avatars/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/img/avatars/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/img/avatars/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/img/avatars/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/img/avatars/6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/img/avatars/7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/img/avatars/8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/img/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/img/logo-symbol.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/_bootstrap-variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/_core-variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/_custom.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_animate.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_aside.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_avatars.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_badge.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_breadcrumb-menu.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_breadcrumb.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_buttons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_callout.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_card.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_charts.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_dropdown-menu-right.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_dropdown.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_footer.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_grid.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_input-group.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_layout.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_loading.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_mixins.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_mobile.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_modal.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_nav.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_navbar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_others.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_progress.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_rtl.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_sidebar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_switches.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_tables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_temp.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_typography.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_utilities.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/_widgets.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/core.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/utilities/_background.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/utilities/_borders.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/core/utilities/_display.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/style.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/uikits/_uikits.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/uikits/email/_email.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/vendors/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/vendors/chart.js/chart.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/vendors/react-select/_components.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/vendors/react-select/_control.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/vendors/react-select/_menu.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/vendors/react-select/_mixins.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/vendors/react-select/_multi.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/vendors/react-select/_select.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/vendors/react-select/_spinner.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scss/vendors/react-select/react-select.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/components/Aside/Aside.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/components/Aside/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/components/Breadcrumb/Breadcrumb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/components/Breadcrumb/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/components/Footer/Footer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/components/Footer/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/components/Header/Header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/components/Header/HeaderDropdown.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/components/Header/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/components/Sidebar/Sidebar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/components/Sidebar/_nav.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/components/Sidebar/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/components/SidebarFooter/SidebarFooter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/components/SidebarFooter/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/components/SidebarForm/SidebarForm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/components/SidebarForm/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/components/SidebarHeader/SidebarHeader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/components/SidebarHeader/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/components/SidebarMinimizer/SidebarMinimizer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/components/SidebarMinimizer/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/containers/Full/Full.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/containers/Full/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/routes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Dashboard/Dashboard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Dashboard/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/views/ExecutiveManager/CheckTickets/CheckTickets.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/views/ExecutiveManager/CheckTickets/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/views/ExecutiveManager/ExeManAdd/ExeManAdd.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/views/ExecutiveManager/ExeManAdd/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/views/ExecutiveManager/ExeManDashboard/ExeManDashboard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/views/ExecutiveManager/ExeManDashboard/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/views/ExecutiveManager/ExeManUpdate/ExeManUpdate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/views/ExecutiveManager/ExeManUpdate/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/views/ExecutiveManager/ReviewsManager/ReviewsManager.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/views/ExecutiveManager/ReviewsManager/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Manager/ManagerAdd/ManagerAdd.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Manager/ManagerAdd/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Manager/ManagerDashboard/ManagerDashboard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Manager/ManagerDashboard/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Manager/ManagerReviews/ManagerReviews.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Manager/ManagerReviews/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Pages/Login/Login.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Pages/Login/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Pages/Page404/Page404.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Pages/Page404/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Pages/Page500/Page500.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Pages/Page500/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Pages/Register/Register.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Pages/Register/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Worker/Account/Account.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Worker/Account/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Worker/Information/Information.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Worker/Information/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Worker/Reviews/Reviews.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/views/Worker/Reviews/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/webpack.config.js" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/views/Worker/ListWorker/ListWorker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/views/Worker/ListWorker/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/components/Sidebar/_nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/components/Sidebar/_nav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/containers/Full/Full.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/containers/Full/Full.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -139,8 +16,60 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/src/components/Sidebar/_nav.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="331">
+              <caret line="99" column="18" selection-start-line="99" selection-start-column="18" selection-end-line="99" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webapp/src/views/Worker/ListWorker/ListWorker.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="91">
+              <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/src/views/Worker/Reviews/Reviews.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="74" column="4" selection-start-line="74" selection-start-column="4" selection-end-line="83" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="package.json" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/webapp/src/components/Sidebar/_nav.js" />
+        <option value="$PROJECT_DIR$/webapp/src/views/Worker/ListWorker/package.json" />
+        <option value="$PROJECT_DIR$/webapp/src/containers/Full/Full.js" />
+        <option value="$PROJECT_DIR$/webapp/src/views/Worker/ListWorker/ListWorker.js" />
+      </list>
+    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -161,8 +90,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -173,13 +102,85 @@
             <path>
               <item name="project" type="b2602c69:ProjectViewProjectNode" />
               <item name="EmployeeManagement" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project" type="b2602c69:ProjectViewProjectNode" />
               <item name="EmployeeManagement" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EmployeeManagement" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EmployeeManagement" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EmployeeManagement" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+              <item name="Full" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EmployeeManagement" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EmployeeManagement" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="Manager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EmployeeManagement" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="Manager" type="462c0819:PsiDirectoryNode" />
+              <item name="ManagerDashboard" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EmployeeManagement" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="Worker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EmployeeManagement" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="Worker" type="462c0819:PsiDirectoryNode" />
+              <item name="ListWorker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EmployeeManagement" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="Worker" type="462c0819:PsiDirectoryNode" />
+              <item name="Reviews" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -194,7 +195,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543401217247" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543548190784" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -232,17 +233,20 @@
       <option name="presentableId" value="Default" />
       <updated>1543398467193</updated>
       <workItem from="1543398468788" duration="624000" />
-      <workItem from="1543399964296" duration="811000" />
+      <workItem from="1543399964296" duration="1652000" />
+      <workItem from="1543426824361" duration="319000" />
+      <workItem from="1543546221856" duration="1515000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1435000" />
+    <option name="totallyTimeSpent" value="4110000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="39" y="25" width="1327" height="743" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25370803" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26151446" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -258,7 +262,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32899022" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32736155" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32899022" />
@@ -279,6 +283,67 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/webapp/src/components/Sidebar/_nav.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="99" column="18" selection-start-line="99" selection-start-column="18" selection-end-line="99" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/views/Worker/Information/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/views/Worker/ListWorker/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/views/Manager/ManagerDashboard/ManagerDashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1965">
+          <caret line="34" column="24" lean-forward="true" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/containers/Full/Full.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1110">
+          <caret line="95" column="116" selection-start-line="95" selection-start-column="116" selection-end-line="95" selection-end-column="116" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#524#582#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/views/Worker/Reviews/Reviews.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="74" column="4" selection-start-line="74" selection-start-column="4" selection-end-line="83" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/views/Worker/ListWorker/ListWorker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>

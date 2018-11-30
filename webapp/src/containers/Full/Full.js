@@ -19,6 +19,7 @@ import Page404 from '../../views/Pages/Page404/';
 import Information from '../../views/Worker/Information/';
 import Reviews from '../../views/Worker/Reviews/';
 import Account from '../../views/Worker/Account/';
+import ListWorker from '../../views/Worker/ListWorker';
 
 
 //Manager
@@ -92,6 +93,7 @@ class Full extends Component {
                                         <Route path="/worker/information" name="Information" component={Information}/>,
                                         <Route path="/worker/reviews" name="Reviews" component={Reviews}/>,
                                         <Route path="/worker/account" name="Account" component={Account}/>,
+                                        <Route path="/worker/listworker" name="ListWorker" component={ListWorker}/>,
                                         <Redirect from="/" to="/worker/information"/>,
 
 

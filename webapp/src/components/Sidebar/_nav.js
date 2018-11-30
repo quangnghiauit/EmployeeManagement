@@ -93,89 +93,17 @@ export default {
                     url: '/worker/account',
                     icon: 'icon-puzzle'
                 },
+                {
+                    name: 'List Worker',
+                    url: '/worker/listworker',
+                    icon: 'icon-puzzle'
+                },
 
             ]
         }
 
     ]
 
-
-    // {
-    //     divider: true
-    // },
-    // {
-    //     title: true,
-    //     name: 'Extras'
-    // },
-    //
-    // {
-    //     name: 'Pages',
-    //     url: '/pages',
-    //     icon: 'icon-star',
-    //     children: [
-    //         {
-    //             name: 'Login',
-    //             url: '/login',
-    //             icon: 'icon-star'
-    //         },
-    //         {
-    //             name: 'Register',
-    //             url: '/register',
-    //             icon: 'icon-star'
-    //         },
-    //         {
-    //             name: 'Error 404',
-    //             url: '/404',
-    //             icon: 'icon-star'
-    //         },
-    //         {
-    //             name: 'Error 500',
-    //             url: '/500',
-    //             icon: 'icon-star'
-    //         }
-    //     ]
-    // },
-    // {
-    //     name: 'UI Kits',
-    //     url: '/ui-kits',
-    //     icon: 'icon-layers',
-    //     children: [
-    //         {
-    //             name: 'Invoicing',
-    //             url: '/ui-kits/invoicing',
-    //             icon: 'icon-speech',
-    //             children: [
-    //                 {
-    //                     name: 'Invoice',
-    //                     url: '/ui-kits/invoicing/invoice',
-    //                     icon: 'icon-speech'
-    //                 }
-    //             ]
-    //         },
-    //         {
-    //             name: 'Email',
-    //             url: '/ui-kits/email',
-    //             icon: 'icon-speech',
-    //             children: [
-    //                 {
-    //                     name: 'Inbox',
-    //                     url: '/ui-kits/email/inbox',
-    //                     icon: 'icon-speech'
-    //                 },
-    //                 {
-    //                     name: 'Message',
-    //                     url: '/ui-kits/email/message',
-    //                     icon: 'icon-speech'
-    //                 },
-    //                 {
-    //                     name: 'Compose',
-    //                     url: '/ui-kits/email/compose',
-    //                     icon: 'icon-speech'
-    //                 }
-    //             ]
-    //         }
-    //     ]
-    // },
 
 
 };
