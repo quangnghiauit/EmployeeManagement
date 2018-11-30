@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import {Container, Row, Col, CardGroup, Card, CardBody, Button, Input, InputGroup, InputGroupAddon} from 'reactstrap';
-import Full from "../../../containers/Full";
-import {Redirect, Route} from "react-router-dom";
 
 
 class Login extends Component {

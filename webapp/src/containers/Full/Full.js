@@ -7,13 +7,7 @@ import Breadcrumb from '../../components/Breadcrumb/';
 import Aside from '../../components/Aside/';
 import Footer from '../../components/Footer/';
 
-import Dashboard from '../../views/Dashboard/';
-
 import axios from 'axios';
-
-
-//404
-import Page404 from '../../views/Pages/Page404/';
 
 //Worker
 import Information from '../../views/Worker/Information/';
@@ -51,6 +45,7 @@ class Full extends Component {
 
         axios.get('http://localhost:9001/api/role')
             .then(response => {
+
                 //console.log(response);
                 this.setState({ roles: response.data });
 
@@ -115,10 +110,6 @@ class Full extends Component {
                                         <Redirect from="/" to="/executivemanager/dashboard"/>
                                     ]
                                 }
-                                <Route path="/dashboard" name="Dashboard" component={Dashboard}/>
-
-
-
                                 {
                                     this.state.roles === '[ROLE_ANONYMOUS]' && [
 

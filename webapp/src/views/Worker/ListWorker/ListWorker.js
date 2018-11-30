@@ -23,11 +23,7 @@ import {
     InputGroupButton,
     Table
 } from 'reactstrap';
-
-
-import {BootstrapTable, TableHeaderColumn} from 'react-bootstrap-table';
 import 'react-bootstrap-table/dist/react-bootstrap-table-all.min.css';
-import {Route} from "react-router-dom";
 import axios from 'axios';
 
 class ListWorker extends Component {
