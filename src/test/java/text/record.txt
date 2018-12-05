@@ -1,1 +1,0 @@
-{"userID":null,"fullname":"kjadshj","email":"sagfhjgf","birthDate":null,"phoneNumber":null,"gender":null,"startHire":null,"address":null,"statusUser":null,"statusAction":null,"department":"asdgsadg","title":"sadgadsg","managerID":null,"executiveID":4}

@@ -45,22 +45,39 @@ public class ProjectApplicationTests {
 
     public void add() throws JsonProcessingException {
 
-        ObjectMapper mapper = new ObjectMapper();
+        for(int i = 1 ; i<1000000;i++) {
+            ObjectMapper mapper = new ObjectMapper();
 
-        //set information manager(add)
-        User userM = new User();
-        userM.setFullname("kjadshj");
-        userM.setEmail("sagfhjgf");
-        userM.setTitle("sadgadsg");
-        userM.setDepartment("asdgsadg");
+            //set information manager(add)
+            User userM = new User();
+            userM.setUserID(i);
+            userM.setFullname(("abc"+i)+"");
 
-        userM.setManagerID(null);
-        userM.setExecutiveID(4);
+            userM.setManagerID(null);
+            userM.setExecutiveID((int)(Math.random()*500));
 
-        System.out.println(userM);
-        String jsonStr = mapper.writeValueAsString(userM);
-        System.out.println(jsonStr);
-        WriteFile("./src/test/java/text/record.txt",jsonStr);
+           System.out.println(userM);
+            String jsonStr = mapper.writeValueAsString(userM);
+            System.out.println(jsonStr);
+           WriteFile("./src/test/java/text/record.txt",jsonStr+",\n");
+//            WriteFile("./src/test/java/text/record.txt",userM.toString()+",\n");
+        }
+//        ObjectMapper mapper = new ObjectMapper();
+//
+//        //set information manager(add)
+//        User userM = new User();
+//        userM.setFullname("kjadshj");
+//        userM.setEmail("sagfhjgf");
+//        userM.setTitle("sadgadsg");
+//        userM.setDepartment("asdgsadg");
+//
+//        userM.setManagerID(null);
+//        userM.setExecutiveID(4);
+//
+//        System.out.println(userM);
+//        String jsonStr = mapper.writeValueAsString(userM);
+//        System.out.println(jsonStr);
+//        WriteFile("./src/test/java/text/record.txt",jsonStr);
 //        userM = userRepository.save(userM);
 
         //set username and password manager

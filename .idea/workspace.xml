@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b89f697-0e49-40b1-b9b6-1fd8f80935ac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vn/zalopay/project/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/zalopay/project/Model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/text/record.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/text/record.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/vn/zalopay/project/ProjectApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/vn/zalopay/project/ProjectApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/vn/zalopay/project/Controller/Locustio.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/vn/zalopay/project/Model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vn/zalopay/project/Model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/vn/zalopay/project/ProjectApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/vn/zalopay/project/ProjectApplicationTests.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,50 +16,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/vn/zalopay/project/Controller/ManagerController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/vn/zalopay/project/Service/ExecutiveServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="795">
-              <caret line="68" column="5" selection-start-line="20" selection-start-column="4" selection-end-line="68" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/vn/zalopay/project/Model/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1740">
-              <caret line="172" column="30" selection-start-line="172" selection-start-column="30" selection-end-line="172" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/vn/zalopay/project/ProjectApplicationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="930">
-              <caret line="62" column="50" selection-start-line="62" selection-start-column="50" selection-end-line="62" selection-end-column="50" />
+            <state relative-caret-position="270">
+              <caret line="61" column="53" selection-start-line="61" selection-start-column="53" selection-end-line="61" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/text/record.json">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/text/record.txt">
           <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vn/zalopay/project/Model/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="307">
+              <caret line="209" column="18" selection-start-line="209" selection-start-column="18" selection-end-line="209" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -128,9 +109,11 @@
         <option value="$PROJECT_DIR$/webapp/src/containers/Full/Full.js" />
         <option value="$PROJECT_DIR$/src/main/java/vn/zalopay/project/Controller/Locustio.java" />
         <option value="$PROJECT_DIR$/src/test/java/vn/zalopay/project/record.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/vn/zalopay/project/Model/User.java" />
         <option value="$PROJECT_DIR$/record.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/vn/zalopay/project/Model/User.java" />
         <option value="$PROJECT_DIR$/src/test/java/vn/zalopay/project/ProjectApplicationTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/text/record.txt" />
+        <option value="$PROJECT_DIR$/src/test/java/text/record.json" />
       </list>
     </option>
   </component>
@@ -170,6 +153,36 @@
               <item name="project" type="b2602c69:ProjectViewProjectNode" />
               <item name="EmployeeManagement" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EmployeeManagement" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EmployeeManagement" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EmployeeManagement" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="Model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EmployeeManagement" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -178,6 +191,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EmployeeManagement" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="text" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project" type="b2602c69:ProjectViewProjectNode" />
@@ -201,7 +222,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543984800999" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543999976285" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/barcode-scanner-poc-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -265,48 +286,47 @@
       <workItem from="1543894875267" duration="2087000" />
       <workItem from="1543898138071" duration="2192000" />
       <workItem from="1543976185187" duration="8616000" />
-      <workItem from="1543984811664" duration="4000" />
+      <workItem from="1543984811664" duration="9541000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ProjectApplicationTests - 2018.12.05 at 11h 08m 22s.xml">
+    <history-entry file="ProjectApplicationTests - 2018.12.05 at 13h 59m 47s.xml">
       <configuration name="ProjectApplicationTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProjectApplicationTests - 2018.12.05 at 11h 18m 04s.xml">
+    <history-entry file="ProjectApplicationTests - 2018.12.05 at 14h 07m 37s.xml">
       <configuration name="ProjectApplicationTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProjectApplicationTests - 2018.12.05 at 11h 20m 44s.xml">
+    <history-entry file="ProjectApplicationTests - 2018.12.05 at 14h 19m 00s.xml">
       <configuration name="ProjectApplicationTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProjectApplicationTests - 2018.12.05 at 11h 21m 26s.xml">
+    <history-entry file="ProjectApplicationTests - 2018.12.05 at 14h 25m 33s.xml">
       <configuration name="ProjectApplicationTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProjectApplicationTests - 2018.12.05 at 11h 25m 24s.xml">
+    <history-entry file="ProjectApplicationTests - 2018.12.05 at 14h 27m 22s.xml">
       <configuration name="ProjectApplicationTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProjectApplicationTests - 2018.12.05 at 11h 26m 12s.xml">
+    <history-entry file="ProjectApplicationTests - 2018.12.05 at 14h 33m 40s.xml">
       <configuration name="ProjectApplicationTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProjectApplicationTests - 2018.12.05 at 11h 32m 19s.xml">
+    <history-entry file="ProjectApplicationTests - 2018.12.05 at 14h 39m 38s.xml">
       <configuration name="ProjectApplicationTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProjectApplicationTests - 2018.12.05 at 11h 32m 50s.xml">
+    <history-entry file="ProjectApplicationTests - 2018.12.05 at 14h 57m 16s.xml">
       <configuration name="ProjectApplicationTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProjectApplicationTests - 2018.12.05 at 11h 34m 23s.xml">
+    <history-entry file="ProjectApplicationTests - 2018.12.05 at 15h 22m 48s.xml">
       <configuration name="ProjectApplicationTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProjectApplicationTests - 2018.12.05 at 11h 38m 31s.xml">
+    <history-entry file="ProjectApplicationTests - 2018.12.05 at 15h 27m 33s.xml">
       <configuration name="ProjectApplicationTests" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26227000" />
+    <option name="totallyTimeSpent" value="35764000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="39" y="25" width="1327" height="743" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18579236" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -317,8 +337,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32899022" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32899022" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.45276874" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -353,7 +373,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32899022" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.1009772" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -593,40 +613,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/vn/zalopay/project/record.txt" />
     <entry file="file://$PROJECT_DIR$/record.txt" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/vn/zalopay/project/Controller/ManagerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vn/zalopay/project/Service/ExecutiveServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="68" column="5" selection-start-line="20" selection-start-column="4" selection-end-line="68" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vn/zalopay/project/Model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1740">
-          <caret line="172" column="30" selection-start-line="172" selection-start-column="30" selection-end-line="172" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/vn/zalopay/project/ProjectApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="62" column="50" selection-start-line="62" selection-start-column="50" selection-end-line="62" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/src/views/Worker/Information/Information.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3390">
@@ -656,6 +642,43 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vn/zalopay/project/Service/ExecutiveServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="60" column="44" lean-forward="true" selection-start-line="60" selection-start-column="44" selection-end-line="60" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vn/zalopay/project/Controller/ManagerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vn/zalopay/project/Model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="209" column="18" selection-start-line="209" selection-start-column="18" selection-end-line="209" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/vn/zalopay/project/ProjectApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="61" column="53" selection-start-line="61" selection-start-column="53" selection-end-line="61" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/text/record.json">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/text/record.txt">
       <provider selected="true" editor-type-id="text-editor" />

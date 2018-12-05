@@ -169,23 +169,44 @@ public class User {
     }
 
 
+//    @Override
+//    public String toString() {
+//        return "{" +
+//                "userID=" + userID +
+//                ", fullname='" + fullname + '\'' +
+//                ", email='" + email + '\'' +
+//                ", birthDate=" + birthDate +
+//                ", phoneNumber='" + phoneNumber + '\'' +
+//                ", gender='" + gender + '\'' +
+//                ", startHire=" + startHire +
+//                ", address='" + address + '\'' +
+//                ", statusUser=" + statusUser +
+//                ", statusAction=" + statusAction +
+//                ", department='" + department + '\'' +
+//                ", title='" + title + '\'' +
+//                ", managerID=" + managerID +
+//                ", executiveID=" + executiveID +
+//                '}';
+//    }
+
+
     @Override
     public String toString() {
-        return "{" +
-                "userID=" + userID +
-                ", fullname='" + fullname + '\'' +
-                ", email='" + email + '\'' +
-                ", birthDate=" + birthDate +
-                ", phoneNumber='" + phoneNumber + '\'' +
-                ", gender='" + gender + '\'' +
-                ", startHire=" + startHire +
-                ", address='" + address + '\'' +
-                ", statusUser=" + statusUser +
-                ", statusAction=" + statusAction +
-                ", department='" + department + '\'' +
-                ", title='" + title + '\'' +
-                ", managerID=" + managerID +
-                ", executiveID=" + executiveID +
-                '}';
+        return "(" +
+                 userID +
+                ", '" + fullname + '\'' +
+                ",'" + email + '\'' +
+                ", " + birthDate +
+                ", '" + phoneNumber + '\'' +
+                ", '" + gender + '\'' +
+                ", " + startHire +
+                ", '" + address + '\'' +
+                ", " + statusUser +
+                ", " + statusAction +
+                ", '" + department + '\'' +
+                ", '" + title + '\'' +
+                ", " + managerID +
+                ", " + executiveID +
+                ')';
     }
 }
