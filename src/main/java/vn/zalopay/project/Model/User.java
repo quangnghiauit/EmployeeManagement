@@ -194,17 +194,19 @@ public class User {
     public String toString() {
         return "(" +
                  userID +
-                ", '" + fullname + '\'' +
-                ",'" + email + '\'' +
+                ", \"" + fullname + '\"' +
+                ", \"" + email + '\"' +
                 ", " + birthDate +
                 ", '" + phoneNumber + '\'' +
                 ", '" + gender + '\'' +
                 ", " + startHire +
-                ", '" + address + '\'' +
+                ", \"" + address + '\"' +
+
                 ", " + statusUser +
                 ", " + statusAction +
-                ", '" + department + '\'' +
-                ", '" + title + '\'' +
+                ", \"" + department + '\"' +
+                ", \"" + title + '\"' +
+
                 ", " + managerID +
                 ", " + executiveID +
                 ')';

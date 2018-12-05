@@ -26,6 +26,10 @@ import java.util.Date;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Locale;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+import java.util.concurrent.TimeUnit;
 
 
 @RunWith(SpringRunner.class)
@@ -46,44 +50,81 @@ public class ProjectApplicationTests {
 //    private PasswordEncoder passwordEncoder;
 
 
-    public void add() throws JsonProcessingException {
+    private static class GenNumberThread implements Runnable {
 
-        WriteFile("./src/test/java/text/record.json","[\n");
-        for(int i = 1 ; i<100;i++) {
-            //fake data
-            Locale locale= new Locale("en-US");
-            Faker faker = new Faker(locale);
-            String fullName = faker.name().fullName();
-            String phoneNumber = faker.phoneNumber().phoneNumber();
-            String email=faker.internet().emailAddress();
-            String address = faker.address().city();
-            Date birthDay = faker.date().birthday();
+        int start;
+        int end;
 
-
-            //convert JSON
-            ObjectMapper mapper = new ObjectMapper();
-
-            //set information manager(add)
-            User userM = new User();
-            userM.setUserID(i);
-            userM.setFullname(fullName);
-            userM.setPhoneNumber(phoneNumber);
-            userM.setEmail(email);
-            userM.setAddress(address);
-            userM.setBirthDate(birthDay);
-            userM.setStatusUser(1);
-            userM.setStatusAction(0);
-
-            userM.setManagerID(null);
-            userM.setExecutiveID((int)(Math.random()*500));
-
-           System.out.println(userM);
-            String jsonStr = mapper.writeValueAsString(userM);
-            System.out.println(jsonStr);
-           WriteFile("./src/test/java/text/record.json",jsonStr+",\n");
-//            WriteFile("./src/test/java/text/record.txt",userM.toString()+",\n");
+        public GenNumberThread(int start, int end) {
+            this.start = start;
+            this.end = end;
         }
-        WriteFile("./src/test/java/text/record.json","]\n");
+
+        @Override
+        public void run() {
+            //writefile
+            for(int i = start ; i<=end;i++) {
+                //fake data
+                Locale locale= new Locale("en");
+                Faker faker = new Faker(locale);
+                String fullName = faker.name().fullName();
+                String phoneNumber = faker.phoneNumber().phoneNumber();
+                String email=faker.internet().emailAddress();
+                String address = faker.address().city();
+//                //convert JSON
+//                ObjectMapper mapper = new ObjectMapper();
+
+                //set information manager(add)
+                User userM = new User();
+                userM.setUserID(i);
+                userM.setFullname(fullName);
+                userM.setPhoneNumber(phoneNumber);
+                userM.setEmail(email);
+                userM.setAddress(address);
+                userM.setStatusUser(1);
+                userM.setStatusAction(0);
+                userM.setManagerID(null);
+                userM.setExecutiveID((int)(Math.random()*500));
+//            String jsonStr = mpper.writeValueAsString(userM);
+//            System.out.println(jsonStr);
+                // WriteFile("./src/test/java/text/record.json",jsonStr+",\n");
+                WriteFile("./src/test/java/text/record"+start+".txt" ,userM.toString()+",\n");
+            }
+
+        }
+
+
+    }
+
+
+    @Test
+    public void add() throws Exception {
+
+
+
+        GenNumberThread thread1 = new GenNumberThread(0, 200000);
+        GenNumberThread thread2 = new GenNumberThread(200001, 500000);
+        GenNumberThread thread3 = new GenNumberThread(500001, 750000);
+        GenNumberThread thread4 = new GenNumberThread(750001, 1000000);
+
+
+        ExecutorService service = Executors.newFixedThreadPool(4);
+
+
+        Future result1 = service.submit(thread1);
+        Future result2 = service.submit(thread2);
+        Future result3 = service.submit(thread3);
+        Future result4 =  service.submit(thread4);
+
+        service.awaitTermination(9999999, TimeUnit.HOURS);
+
+        result1.get();
+        result2.get();
+
+        result3.get();
+        result4.get();
+
+
 //        ObjectMapper mapper = new ObjectMapper();
 //
 //        //set information manager(add)
@@ -113,21 +154,9 @@ public class ProjectApplicationTests {
         userRoleM = userRoleRepository.save(userRoleM);*/
     }
 
-    @Test
-    public void contextLoads() throws JsonProcessingException {
-        ProjectApplicationTests Fi= new ProjectApplicationTests();
-
-        Fi.add();
-//       String strTextFile = "./record.txt";
-//        Fi.ReadFile(strTextFile);
-//
-//        String strTextData = "\nhelooooooooooo";
-//        Fi.WriteFile("./record.txt",strTextData);
-        Fi.ReadFile("./src/test/java/text/record.txt");
-    }
 
 
-    public void WriteFile(String strFile, String strData) {
+    public static void WriteFile(String strFile, String strData) {
         try(BufferedWriter bufferedWriter= new BufferedWriter(new FileWriter(strFile,true))) {
             bufferedWriter.write(strData);
         }
@@ -135,7 +164,7 @@ public class ProjectApplicationTests {
             e.printStackTrace();
         }
     }
-    public void ReadFile(String strFile) {
+    public static void ReadFile(String strFile) {
         String strBuffer;
         try(BufferedReader bufferedReader = new BufferedReader(new FileReader(strFile))) {
             while ((strBuffer = bufferedReader.readLine())!=null) {
