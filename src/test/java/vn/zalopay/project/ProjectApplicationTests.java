@@ -2,6 +2,7 @@ package vn.zalopay.project;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.github.javafaker.Faker;
 import com.google.gson.Gson;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -21,8 +22,10 @@ import vn.zalopay.project.Util.UserInformation;
 
 
 import java.io.*;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Locale;
 
 
 @RunWith(SpringRunner.class)
@@ -45,13 +48,31 @@ public class ProjectApplicationTests {
 
     public void add() throws JsonProcessingException {
 
-        for(int i = 1 ; i<1000000;i++) {
+        WriteFile("./src/test/java/text/record.json","[\n");
+        for(int i = 1 ; i<100;i++) {
+            //fake data
+            Locale locale= new Locale("en-US");
+            Faker faker = new Faker(locale);
+            String fullName = faker.name().fullName();
+            String phoneNumber = faker.phoneNumber().phoneNumber();
+            String email=faker.internet().emailAddress();
+            String address = faker.address().city();
+            Date birthDay = faker.date().birthday();
+
+
+            //convert JSON
             ObjectMapper mapper = new ObjectMapper();
 
             //set information manager(add)
             User userM = new User();
             userM.setUserID(i);
-            userM.setFullname(("abc"+i)+"");
+            userM.setFullname(fullName);
+            userM.setPhoneNumber(phoneNumber);
+            userM.setEmail(email);
+            userM.setAddress(address);
+            userM.setBirthDate(birthDay);
+            userM.setStatusUser(1);
+            userM.setStatusAction(0);
 
             userM.setManagerID(null);
             userM.setExecutiveID((int)(Math.random()*500));
@@ -59,9 +80,10 @@ public class ProjectApplicationTests {
            System.out.println(userM);
             String jsonStr = mapper.writeValueAsString(userM);
             System.out.println(jsonStr);
-           WriteFile("./src/test/java/text/record.txt",jsonStr+",\n");
+           WriteFile("./src/test/java/text/record.json",jsonStr+",\n");
 //            WriteFile("./src/test/java/text/record.txt",userM.toString()+",\n");
         }
+        WriteFile("./src/test/java/text/record.json","]\n");
 //        ObjectMapper mapper = new ObjectMapper();
 //
 //        //set information manager(add)
