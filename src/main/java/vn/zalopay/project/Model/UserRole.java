@@ -11,25 +11,12 @@ import java.util.Set;
 
 @Document(collection = "userRole")
 public class UserRole {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id", nullable = false)
-    private ObjectId _id;
-
 
     private Integer userID;
     private String userName;
     private String password;
-    @DBRef
-    private Set<Role> roles;
 
-    public ObjectId get_id() {
-        return _id;
-    }
-
-    public void set_id(ObjectId _id) {
-        this._id = _id;
-    }
+    private String roles;
 
     public Integer getUserID() {
         return userID;
@@ -55,11 +42,11 @@ public class UserRole {
         this.password = password;
     }
 
-    public Set<Role> getRoles() {
+    public String getRoles() {
         return roles;
     }
 
-    public void setRoles(Set<Role> roles) {
+    public void setRoles(String roles) {
         this.roles = roles;
     }
 }

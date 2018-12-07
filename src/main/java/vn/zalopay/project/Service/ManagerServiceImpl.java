@@ -81,9 +81,8 @@ public class ManagerServiceImpl implements ManagerService {
         userRoleW.setUserID(userW.getUserID());
         userRoleW.setUserName(userInformation.getUserName());
         userRoleW.setPassword(passwordEncoder.encode(userInformation.getPassword()));
-        HashSet<Role> roleHashSet = new HashSet<>();
-        roleHashSet.add(roleRepository.findByRole("ROLE_WORKER"));
-        userRoleW.setRoles(roleHashSet);
+
+        userRoleW.setRoles("ROLE_WORKER");
         userRoleW=userRoleRepository.save(userRoleW);
     }
 

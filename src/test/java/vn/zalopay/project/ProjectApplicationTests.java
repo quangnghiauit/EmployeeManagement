@@ -35,19 +35,6 @@ import java.util.concurrent.TimeUnit;
 @RunWith(SpringRunner.class)
 public class ProjectApplicationTests {
 
-//    @Autowired
-//    private UserRepository userRepository;
-//
-//    @Autowired
-//    private RoleRepository roleRepository;
-//
-//
-//    @Autowired
-//    private UserRoleRepository userRoleRepository;
-//
-//
-//    @Autowired
-//    private PasswordEncoder passwordEncoder;
 
 
     private static class GenNumberThread implements Runnable {
@@ -63,32 +50,98 @@ public class ProjectApplicationTests {
         @Override
         public void run() {
             //writefile
-            for(int i = start ; i<=end;i++) {
+            for (int i = start; i <= end; i++) {
                 //fake data
-                Locale locale= new Locale("en");
+                Locale locale = new Locale("en");
                 Faker faker = new Faker(locale);
-                String fullName = faker.name().fullName();
+               String fullName = faker.name().fullName();
                 String phoneNumber = faker.phoneNumber().phoneNumber();
-                String email=faker.internet().emailAddress();
-                String address = faker.address().city();
-//                //convert JSON
-//                ObjectMapper mapper = new ObjectMapper();
 
+                String email = faker.internet().emailAddress();
+                String address = faker.address().city();
+
+                //set information executive(add)
+                // id= 1->100 => executive
+//                User userM = new User();
+//                userM.setUserID(i);
+//                userM.setFullname(fullName);
+//                userM.setPhoneNumber(phoneNumber);
+//                userM.setEmail(email);
+//
+//                if(i%2!=0) {userM.setGender("Male");}
+//                else {userM.setGender("Female");}
+//
+//                userM.setDepartment("Zalo Pay");
+//                userM.setTitle("Executive");
+//                userM.setAddress(address);
+//                userM.setStatusUser(1);
+//                userM.setStatusAction(0);
+//                userM.setManagerID(null);
+//                userM.setExecutiveID(null);
                 //set information manager(add)
-                User userM = new User();
-                userM.setUserID(i);
-                userM.setFullname(fullName);
-                userM.setPhoneNumber(phoneNumber);
-                userM.setEmail(email);
-                userM.setAddress(address);
-                userM.setStatusUser(1);
-                userM.setStatusAction(0);
-                userM.setManagerID(null);
-                userM.setExecutiveID((int)(Math.random()*500));
-//            String jsonStr = mpper.writeValueAsString(userM);
-//            System.out.println(jsonStr);
-                // WriteFile("./src/test/java/text/record.json",jsonStr+",\n");
-                WriteFile("./src/test/java/text/record"+start+".txt" ,userM.toString()+",\n");
+//                User userM = new User();
+//                userM.setUserID(i);
+//                userM.setFullname(fullName);
+//                userM.setPhoneNumber(phoneNumber);
+//                userM.setEmail(email);
+//                if (i % 2 != 0) {
+//                    userM.setGender("Male");
+//                } else {
+//                    userM.setGender("Female");
+//                }
+//
+//                userM.setDepartment("Zalo Pay");
+//                userM.setTitle("Lead");
+//                userM.setAddress(address);
+//                userM.setStatusUser(1);
+//                userM.setStatusAction(0);
+//
+//                userM.setManagerID(null);
+//                userM.setExecutiveID((int) (Math.random() * 100));
+
+                //set information worker(add)
+
+                User userW = new User();
+                userW.setUserID(i);
+                userW.setFullname(fullName);
+                userW.setPhoneNumber(phoneNumber);
+                userW.setEmail(email);
+                if (i % 2 != 0) {
+                    userW.setGender("Male");
+                } else {
+                   userW.setGender("Female");
+                }
+
+                userW.setDepartment("Zalo Pay");
+               userW.setTitle("Fresher");
+                userW.setAddress(address);
+                userW.setStatusUser(1);
+                userW.setStatusAction(0);
+
+                userW.setManagerID((int)(100+ Math.random()*2899));
+                userW.setExecutiveID((int) (Math.random() * 100));
+
+                System.out.println(userW.toString());
+                WriteFile("./src/test/java/text/worker" + start + ".txt", userW + "\n");
+
+                //set information manager mongod(add)
+//                ObjectMapper mapper = new ObjectMapper();
+//
+//                UserRole userW = new UserRole();
+//                userW.setUserID(i);
+//                userW.setUserName("executive" + i + "");
+//                userW.setPassword("$2a$10$lEQsQ8.h6pwN2bAeF8fxJeL4BGzgRit4zk7j6.QBDVkancYc/..Vm");
+//                userW.setRoles("ROLE_EXECUTIVE");
+//
+//                String jsonUserW = null;
+//                try {
+//                    jsonUserW = mapper.writeValueAsString(userW);
+//                } catch (JsonProcessingException e) {
+//                    e.printStackTrace();
+//                }
+//                System.out.println(jsonUserW);
+//
+//                WriteFile("./src/test/java/text/executivemongo" + start + ".json", jsonUserW + "\n");
             }
 
         }
@@ -99,11 +152,8 @@ public class ProjectApplicationTests {
 
     @Test
     public void add() throws Exception {
-
-
-
-        GenNumberThread thread1 = new GenNumberThread(0, 200000);
-        GenNumberThread thread2 = new GenNumberThread(200001, 500000);
+        GenNumberThread thread1 = new GenNumberThread(24001, 250000);
+        GenNumberThread thread2 = new GenNumberThread(250001, 500000);
         GenNumberThread thread3 = new GenNumberThread(500001, 750000);
         GenNumberThread thread4 = new GenNumberThread(750001, 1000000);
 
@@ -114,68 +164,35 @@ public class ProjectApplicationTests {
         Future result1 = service.submit(thread1);
         Future result2 = service.submit(thread2);
         Future result3 = service.submit(thread3);
-        Future result4 =  service.submit(thread4);
+        Future result4 = service.submit(thread4);
 
-        service.awaitTermination(9999999, TimeUnit.HOURS);
+        service.awaitTermination(10, TimeUnit.SECONDS);
 
         result1.get();
         result2.get();
-
         result3.get();
         result4.get();
-
-
-//        ObjectMapper mapper = new ObjectMapper();
-//
-//        //set information manager(add)
-//        User userM = new User();
-//        userM.setFullname("kjadshj");
-//        userM.setEmail("sagfhjgf");
-//        userM.setTitle("sadgadsg");
-//        userM.setDepartment("asdgsadg");
-//
-//        userM.setManagerID(null);
-//        userM.setExecutiveID(4);
-//
-//        System.out.println(userM);
-//        String jsonStr = mapper.writeValueAsString(userM);
-//        System.out.println(jsonStr);
-//        WriteFile("./src/test/java/text/record.txt",jsonStr);
-//        userM = userRepository.save(userM);
-
-        //set username and password manager
-        /*UserRole userRoleM = new UserRole();
-        userRoleM.setUserID(userM.getUserID());
-        userRoleM.setUserName(userInformation.getUserName());
-        userRoleM.setPassword(passwordEncoder.encode(userInformation.getPassword()));
-        HashSet<Role> roleHashSet = new HashSet<>();
-        roleHashSet.add(roleRepository.findByRole("ROLE_MANAGER"));
-        userRoleM.setRoles(roleHashSet);
-        userRoleM = userRoleRepository.save(userRoleM);*/
     }
-
 
 
     public static void WriteFile(String strFile, String strData) {
-        try(BufferedWriter bufferedWriter= new BufferedWriter(new FileWriter(strFile,true))) {
+        try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(strFile, true))) {
             bufferedWriter.write(strData);
-        }
-        catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-    public static void ReadFile(String strFile) {
-        String strBuffer;
-        try(BufferedReader bufferedReader = new BufferedReader(new FileReader(strFile))) {
-            while ((strBuffer = bufferedReader.readLine())!=null) {
-                System.out.println(strBuffer);
-            }
-        }
-        catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
+    public static void ReadFile(String strFile) {
+        String strBuffer;
+        try (BufferedReader bufferedReader = new BufferedReader(new FileReader(strFile))) {
+            while ((strBuffer = bufferedReader.readLine()) != null) {
+                System.out.println(strBuffer);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
 
 }

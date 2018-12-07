@@ -62,9 +62,8 @@ public class ExecutiveServiceImpl implements ExecutiveService {
         userRoleM.setUserID(userM.getUserID());
         userRoleM.setUserName(userInformation.getUserName());
         userRoleM.setPassword(passwordEncoder.encode(userInformation.getPassword()));
-        HashSet<Role> roleHashSet = new HashSet<>();
-        roleHashSet.add(roleRepository.findByRole("ROLE_MANAGER"));
-        userRoleM.setRoles(roleHashSet);
+
+        userRoleM.setRoles("ROLE_MANAGER");
         userRoleM = userRoleRepository.save(userRoleM);
     }
 

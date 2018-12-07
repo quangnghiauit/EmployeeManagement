@@ -48,35 +48,28 @@ public class DataSeedingListener implements ApplicationListener<ContextRefreshed
             roleRepository.save(new Role("ROLE_EXECUTIVE"));
         }
 
-        // Admin account
-        if (userRoleRepository.findByUserName("quangnghiauit") == null) {
-            UserRole admin = new UserRole();
-            admin.setUserName("quangnghiauit");
-            admin.setPassword(passwordEncoder.encode("123456"));
-            HashSet<Role> roles = new HashSet<>();
-            roles.add(roleRepository.findByRole("ROLE_ADMIN"));
-            admin.setRoles(roles);
-            userRoleRepository.save(admin);
-        }
+//        // Admin account
+//        if (userRoleRepository.findByUserName("quangnghiauit") == null) {
+//            UserRole admin = new UserRole();
+//            admin.setUserName("quangnghiauit");
+//            admin.setPassword(passwordEncoder.encode("123456"));
+//            HashSet<Role> roles = new HashSet<>();
+//            roles.add(roleRepository.findByRole("ROLE_ADMIN"));
+//            admin.setRoles(roles);
+//            userRoleRepository.save(admin);
+//        }
 
         // Member account
-        if (userRoleRepository.findByUserName("executive") == null) {
-            User dbUser = new User();
-            dbUser.setFullname("executive manager");
-
-            dbUser.setManagerID(null);
-            dbUser.setExecutiveID(null);
-            userRepository.save(dbUser);
-
-            UserRole executive = new UserRole();
-            executive.setUserName("executive");
-            executive.setPassword(passwordEncoder.encode("123456"));
-            executive.setUserID(dbUser.getUserID());
-            HashSet<Role> roles = new HashSet<>();
-            roles.add(roleRepository.findByRole("ROLE_EXECUTIVE"));
-            executive.setRoles(roles);
-            userRoleRepository.save(executive);
-        }
+//        if (userRoleRepository.findByUserName("executive") == null) {
+//
+//
+//            UserRole executive = new UserRole();
+//            executive.setUserName("executive");
+//            executive.setPassword(passwordEncoder.encode("123456"));
+//            executive.setUserID(1);
+//            executive.setRoles("ROLE_EXECUTIVE");
+//            userRoleRepository.save(executive);
+//        }
     }
 
 }
