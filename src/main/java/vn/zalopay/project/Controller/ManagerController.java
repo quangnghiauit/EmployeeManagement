@@ -54,4 +54,11 @@ public class ManagerController {
 
     }
 
+    @RequestMapping(value = "/getAllWorker", method = RequestMethod.GET)
+    public @ResponseBody
+    List<User> getAllWorker() {
+
+        return managerService.getAllWorker();
+    }
+
 }

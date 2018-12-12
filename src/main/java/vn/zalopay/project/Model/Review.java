@@ -63,5 +63,15 @@ public class Review {
         this.note = note;
     }
 
+    @Override
+    public String toString() {
+        return "(" +
+                 reviewID +
+                ", " + userReviewID +
+                ", " + userReceivedID +
+                ", \"" + rating + '\"' +
+                ", \"" + note + '\"' +
+                ')';
 
+    }
 }

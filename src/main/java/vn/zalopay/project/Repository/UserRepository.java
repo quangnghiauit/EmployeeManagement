@@ -34,6 +34,6 @@ public interface UserRepository extends CrudRepository<User, Integer> {
     List<User> getWorkerInactive();
 
 
-
-
+    @Query("select u from User u where u.executiveID is not null and u.managerID is not null ")
+    List<User> getAllWorker();
 }

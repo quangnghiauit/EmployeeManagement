@@ -120,4 +120,9 @@ public class ManagerServiceImpl implements ManagerService {
 
         oldUser = userRepository.save(oldUser);
     }
+
+    @Override
+    public List<User> getAllWorker() {
+        return userRepository.getAllWorker();
+    }
 }

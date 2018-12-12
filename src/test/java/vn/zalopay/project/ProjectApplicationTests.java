@@ -11,6 +11,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.converter.json.GsonHttpMessageConverter;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.test.context.junit4.SpringRunner;
+import vn.zalopay.project.Model.Review;
 import vn.zalopay.project.Model.Role;
 import vn.zalopay.project.Model.User;
 import vn.zalopay.project.Model.UserRole;
@@ -36,7 +37,6 @@ import java.util.concurrent.TimeUnit;
 public class ProjectApplicationTests {
 
 
-
     private static class GenNumberThread implements Runnable {
 
         int start;
@@ -52,13 +52,13 @@ public class ProjectApplicationTests {
             //writefile
             for (int i = start; i <= end; i++) {
                 //fake data
-                Locale locale = new Locale("en");
-                Faker faker = new Faker(locale);
-               String fullName = faker.name().fullName();
-                String phoneNumber = faker.phoneNumber().phoneNumber();
-
-                String email = faker.internet().emailAddress();
-                String address = faker.address().city();
+//                Locale locale = new Locale("en");
+//                Faker faker = new Faker(locale);
+//                String fullName = faker.name().fullName();
+//                String phoneNumber = faker.phoneNumber().phoneNumber();
+//
+//                String email = faker.internet().emailAddress();
+//                String address = faker.address().city();
 
                 //set information executive(add)
                 // id= 1->100 => executive
@@ -79,6 +79,7 @@ public class ProjectApplicationTests {
 //                userM.setManagerID(null);
 //                userM.setExecutiveID(null);
                 //set information manager(add)
+                // id = 101 -> 4000 => manager
 //                User userM = new User();
 //                userM.setUserID(i);
 //                userM.setFullname(fullName);
@@ -98,31 +99,36 @@ public class ProjectApplicationTests {
 //
 //                userM.setManagerID(null);
 //                userM.setExecutiveID((int) (Math.random() * 100));
+//
+//                System.out.println(userM.toString());
+//                WriteFile("./src/test/java/text/manager" + start + ".txt", userM.toString() + ",\n");
 
                 //set information worker(add)
+//id=4001->1000000=> worker
+//                User userW = new User();
+//                userW.setUserID(i);
+//                userW.setFullname(fullName);
+//                userW.setPhoneNumber(phoneNumber);
+//                userW.setEmail(email);
+//                if (i % 2 != 0) {
+//                    userW.setGender("Male");
+//                } else {
+//                    userW.setGender("Female");
+//                }
+//
+//                userW.setDepartment("Zalo Pay");
+//                userW.setTitle("Fresher");
+//                userW.setAddress(address);
+//                userW.setStatusUser(1);
+//                userW.setStatusAction(0);
+//
+//                userW.setManagerID((int) (100 + Math.random() * 3899));
+//                userW.setExecutiveID((int) (Math.random() * 100));
+//
+//                System.out.println(userW.toString());
+//                WriteFile("./src/test/java/text/worker" + start + ".txt", userW.toString() + ",\n");
 
-                User userW = new User();
-                userW.setUserID(i);
-                userW.setFullname(fullName);
-                userW.setPhoneNumber(phoneNumber);
-                userW.setEmail(email);
-                if (i % 2 != 0) {
-                    userW.setGender("Male");
-                } else {
-                   userW.setGender("Female");
-                }
 
-                userW.setDepartment("Zalo Pay");
-               userW.setTitle("Fresher");
-                userW.setAddress(address);
-                userW.setStatusUser(1);
-                userW.setStatusAction(0);
-
-                userW.setManagerID((int)(100+ Math.random()*2899));
-                userW.setExecutiveID((int) (Math.random() * 100));
-
-                System.out.println(userW.toString());
-                WriteFile("./src/test/java/text/worker" + start + ".txt", userW + "\n");
 
                 //set information manager mongod(add)
 //                ObjectMapper mapper = new ObjectMapper();
@@ -142,6 +148,22 @@ public class ProjectApplicationTests {
 //                System.out.println(jsonUserW);
 //
 //                WriteFile("./src/test/java/text/executivemongo" + start + ".json", jsonUserW + "\n");
+
+
+
+                Review dbReview = new Review();
+                dbReview.setReviewID(i);
+                dbReview.setUserReviewID((int) (100+ Math.random()*3899));
+                dbReview.setUserReceivedID((int) (4000+ Math.random()*990000));
+                if (i % 2 != 0) {
+                    dbReview.setRating("Excellent");
+                } else {
+                    dbReview.setRating("Good");
+                }
+
+                dbReview.setNote("No comment.");
+                System.out.println(dbReview.toString());
+                WriteFile("./src/test/java/text/reviewmanager" + start + ".txt", dbReview.toString() + ",\n");
             }
 
         }
@@ -152,10 +174,10 @@ public class ProjectApplicationTests {
 
     @Test
     public void add() throws Exception {
-        GenNumberThread thread1 = new GenNumberThread(24001, 250000);
-        GenNumberThread thread2 = new GenNumberThread(250001, 500000);
-        GenNumberThread thread3 = new GenNumberThread(500001, 750000);
-        GenNumberThread thread4 = new GenNumberThread(750001, 1000000);
+        GenNumberThread thread1 = new GenNumberThread(1000001, 1250000);
+        GenNumberThread thread2 = new GenNumberThread(1250001, 1500000);
+        GenNumberThread thread3 = new GenNumberThread(1500001, 1750000);
+        GenNumberThread thread4 = new GenNumberThread(1750001, 2000000);
 
 
         ExecutorService service = Executors.newFixedThreadPool(4);

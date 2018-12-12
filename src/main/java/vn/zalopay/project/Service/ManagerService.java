@@ -19,4 +19,6 @@ public interface ManagerService {
 
     void review(Integer id, Review review);
     void updateStatusWorker(Integer id);
+
+    List<User> getAllWorker();
 }
