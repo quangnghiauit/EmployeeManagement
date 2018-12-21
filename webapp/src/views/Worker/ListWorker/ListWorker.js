@@ -44,7 +44,14 @@ class ListWorker extends Component {
 
 
     componentDidMount() {
-        axios.get('http://localhost:9001/api/getID')
+        axios({
+            method: 'GET',
+            url: 'http://localhost:8080/api/getID',
+            withCredentials:true,
+            headers: {
+                Cookies: document.cookie
+            }
+        })
             .then(response => {
                 this.setState({
                     userID: response.data.userID
@@ -56,7 +63,14 @@ class ListWorker extends Component {
     }
 
     getListWorker() {
-        axios.get('http://localhost:9001/listworker/' + this.state.userID)
+        axios({
+            method: 'GET',
+            url: 'http://localhost:8080/listworker/' + this.state.userID,
+            withCredentials:true,
+            headers: {
+                Cookies: document.cookie
+            }
+        })
             .then(response => {
                 this.setState({
                     user: response.data

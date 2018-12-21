@@ -32,6 +32,7 @@ import CheckTickets from '../../views/ExecutiveManager/CheckTickets';
 
 
 
+
 class Full extends Component {
     constructor(props) {
         super(props);
@@ -42,27 +43,46 @@ class Full extends Component {
     }
 
     componentDidMount() {
+        axios({
+            method: 'GET',
+            url: 'http://localhost:8080/api/role',
+            withCredentials: true,
+            headers: {
+                Cookies: document.cookie
+            }
 
-        axios.get('http://localhost:9001/api/role')
+
+        })
             .then(response => {
 
-                //console.log(response);
+                //console.log("Fullllllljsss",response.data);
                 this.setState({ roles: response.data });
 
                 })
             .catch(error => console.log(error));
-
-        axios.get('http://localhost:9001/api/auth')
+        axios({
+            method: 'GET',
+            url: 'http://localhost:8080/api/auth',
+            withCredentials: true,
+            headers: {
+                Cookies: document.cookie
+            }
+        })
             .then(response => {
-                //console.log(response);
+
+                //console.log("fullll auth",response.data)
                 this.setState({
-                    auth: response.data
-                });
+                        auth: response.data
+
+                    })
             })
             .catch(error => console.log(error));
 
+
+
     }
     render() {
+        //console.log("render role",this.state.roles)
         return (
             <div className="app">
                 <Header/>

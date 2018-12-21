@@ -48,7 +48,15 @@ class ExeManAdd extends Component {
         this.setState({newUser});
     }
     componentDidMount() {
-        axios.get('http://localhost:9001/api/getID')
+        axios({
+            method: 'GET',
+            url: 'http://localhost:8080/api/getID',
+            withCredentials: true,
+            headers: {
+                Cookies: document.cookie
+            }
+        })
+        // axios.get('http://localhost:8080/api/getID')
             .then(response => {
                 this.setState({
                     userID: response.data.userID
@@ -60,15 +68,17 @@ class ExeManAdd extends Component {
     }
 
     addManager() {
-
         axios({
             method: 'POST',
-            url: 'http://localhost:9001/addmanager/' + this.state.userID,
+            url: 'http://localhost:8080/addmanager/' + this.state.userID,
             data: JSON.stringify(this.state.newUser),
-            headers: {'Content-Type': 'application/json; charset=utf-8'}
+            withCredentials: true,
+            headers: {
+                Cookies: document.cookie
+            }
         })
             .then((response) => {
-                console.log('YEAHHHHH');
+                //console.log('YEAHHHHH');
                 alert('Add manager successfully.');
             })
             .catch((error) => {

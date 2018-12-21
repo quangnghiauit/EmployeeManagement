@@ -56,9 +56,11 @@ class ManagerDashboard extends Component {
     deleteWorker(workerID) {
         axios({
             method: 'PUT',
-            url: 'http://localhost:9001/updatestatusworkeraction/' + workerID,
-
-            headers: {'Content-Type': 'application/json; charset=utf-8'}
+            url: 'http://localhost:8080/updatestatusworkeraction/' + workerID,
+            withCredentials: true,
+            headers: {
+                Cookies: document.cookie
+            }
         })
             .then((response) => {
 
@@ -77,7 +79,14 @@ class ManagerDashboard extends Component {
 
 
     componentDidMount() {
-        axios.get('http://localhost:9001/api/getID')
+        axios({
+            method: 'GET',
+            url: 'http://localhost:8080/api/getID',
+            withCredentials: true,
+            headers: {
+                Cookies: document.cookie
+            }
+        })
             .then(response => {
                 this.setState({
                     userID: response.data.userID
@@ -89,7 +98,14 @@ class ManagerDashboard extends Component {
     }
 
     getListWorker() {
-        axios.get('http://localhost:9001/getListWorker/' + this.state.userID)
+        axios({
+            method: 'GET',
+            url: 'http://localhost:8080/getListWorker/' + this.state.userID,
+            withCredentials: true,
+            headers: {
+                Cookies: document.cookie
+            }
+        })
             .then(response => {
 
                 this.setState({

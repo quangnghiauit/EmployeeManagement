@@ -23,10 +23,23 @@ class Sidebar extends Component {
     }
 
     componentDidMount() {
+        // fetch("http://localhost:8080/api/role",{
+        //     method:"GET",
+        // })
+        axios({
+            method: 'GET',
+            url: 'http://localhost:8080/api/role',
+            withCredentials: true,
+            headers: {
+                Cookies: document.cookie
+            }
 
-        axios.get('http://localhost:9001/api/role')
+
+        })
             .then(response => {
+                //console.log("slide barrrrr",response.data)
                 this.setState({roles: response.data});
+
 
 
                 if (this.state.roles === '[ROLE_EXECUTIVE]') {

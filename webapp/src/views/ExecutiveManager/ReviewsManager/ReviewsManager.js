@@ -60,7 +60,14 @@ class ReviewsManager extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:9001/api/getID')
+        axios({
+            method: 'GET',
+            url: 'http://localhost:8080/api/getID',
+            withCredentials: true,
+            headers: {
+                Cookies: document.cookie
+            }
+        })
             .then(response => {
                 this.setState({
                     userID: response.data.userID
@@ -71,7 +78,14 @@ class ReviewsManager extends Component {
     }
 
     getListManager() {
-        axios.get('http://localhost:9001/getListManager/' + this.state.userID)
+        axios({
+            method: 'GET',
+            url: 'http://localhost:8080/getListManager/' + this.state.userID,
+            withCredentials: true,
+            headers: {
+                Cookies: document.cookie
+            }
+        })
             .then(response => {
                 this.setState({
                     user: response.data
@@ -80,7 +94,14 @@ class ReviewsManager extends Component {
             .catch(error => console.log(error));
     }
     getListWorker() {
-        axios.get('http://localhost:9001/getListWorkerReview/' + this.state.managerID)
+        axios({
+            method: 'GET',
+            url: 'http://localhost:8080/getListWorkerReview/' + this.state.managerID,
+            withCredentials: true,
+            headers: {
+                Cookies: document.cookie
+            }
+        })
             .then(response => {
                 this.setState({
                     listWorkerReview: response.data

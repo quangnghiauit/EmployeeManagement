@@ -20,6 +20,7 @@ public class ManagerController {
     @Autowired
     private ManagerService managerService;
 
+    @CrossOrigin
     @RequestMapping(value = "/getListWorker/{id}", method = RequestMethod.GET)
     public @ResponseBody
     List<User> getListWorker(@PathVariable Integer id) {
@@ -27,12 +28,14 @@ public class ManagerController {
         return managerService.getListWorker(id);
     }
 
+    @CrossOrigin
     @RequestMapping(value = "/addworker/{id}", method = RequestMethod.POST)
     public @ResponseBody
     void addWorker(@RequestBody UserInformation userInformation, @PathVariable Integer id) {
         managerService.add(userInformation, id);
     }
 
+    @CrossOrigin
     @RequestMapping(value = "/deleteworker/{id}", method = RequestMethod.DELETE)
     public @ResponseBody
     void delete(@PathVariable Integer id) {
@@ -40,6 +43,7 @@ public class ManagerController {
         managerService.delete(id);
     }
 
+    @CrossOrigin
     @RequestMapping(value = "/reviewWorkerM/{id}", method = RequestMethod.POST)
     public @ResponseBody
     void reviewWorkerM(@PathVariable Integer id, @RequestBody Review review) {
@@ -47,6 +51,7 @@ public class ManagerController {
 
     }
 
+    @CrossOrigin
     @RequestMapping(value = "/updatestatusworkeraction/{id}", method = RequestMethod.PUT)
     public @ResponseBody
     void updatestatusworker( @PathVariable Integer id) {
@@ -54,6 +59,7 @@ public class ManagerController {
 
     }
 
+    @CrossOrigin
     @RequestMapping(value = "/getAllWorker", method = RequestMethod.GET)
     public @ResponseBody
     List<User> getAllWorker() {

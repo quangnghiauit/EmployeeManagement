@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import {Container, Row, Col, CardGroup, Card, CardBody, Button, Input, InputGroup, InputGroupAddon} from 'reactstrap';
+import {Redirect} from "react-router-dom";
+
 
 
 class Login extends Component {
@@ -14,6 +16,7 @@ class Login extends Component {
         this.handleUserChange = this.handleUserChange.bind(this);
         this.handleLogin = this.handleLogin.bind(this);
         this.redirectLogin= this.redirectLogin.bind(this);
+        this.redirectCheckLogin= this.redirectCheckLogin.bind(this);
     }
 
     handleUserChange(event) {
@@ -23,40 +26,64 @@ class Login extends Component {
 
     handleLogin() {
         // just in case we need it
-        e.preventDefault();
+
+
         const { username, password } = this.state;
-        axios
-            .post("http://localhost:8080/login", {username, password})
-            .then( res => {
-                let { data } = res;
-                if(data.success) {
-                    //localStorage.setItem("username",this.state.username);
-                    //window.location.href = 'search';
-                }
-                else alert(data.error);
-            });
+
+        const data = new FormData();
+        data.append("username",username);
+        data.append("password",password);
+        fetch("http://localhost:8080/login", {
+            method: "POST",
+            body: data,
+            credentials:"include",
+        })
+            .then(response => response.json()
+            )
+            .then((body)=> {
+                //console.log(body)
+               this.setState({
+                   checklogin:body
+               },()=>{this.redirectCheckLogin()})
+
+               // console.log(this.state.checklogin)
+            })
+
     }
     redirectLogin() {
         if(this.state.auth!=='[ROLE_ANONYMOUS]') {
             this.props.history.push('/');
 
         }
+    }
 
-
+    redirectCheckLogin() {
+        if(this.state.checklogin===true) {
+            console.log("success login");
+            this.props.history.push('/');
+        }
 
     }
 
+
     componentDidMount() {
-        axios.get('http://localhost:9001/api/auth')
-            .then(response => {
-                //console.log(response);
+        axios({
+            method: 'GET',
+            url: 'http://localhost:8080/api/auth',
+            withCredentials: true,
+            headers: {
+                Cookies: document.cookie
+            }
+        })
+        .then(response => {
+
+            // console.log("login authhhh",response)
                 this.setState({
                     auth: response.data
 
                 },()=>this.redirectLogin()
 
                 )
-                //console.log(this.state.auth);
             })
             .catch(error => console.log(error));
 
@@ -66,7 +93,7 @@ class Login extends Component {
         return (
             <div className="app flex-row align-items-center">
                 <Container>
-                    <form action="/login" method="POST" onSubmit={this.handleLogin}>
+
                         <Row className="justify-content-center">
 
                             <Col md="8">
@@ -113,7 +140,7 @@ class Login extends Component {
                                             <Row>
                                                 <Col xs="6">
                                                     <Button color="primary" className="px-4" type="submit"
-                                                            value="Submit" name="action">Login</Button>
+                                                            value="Submit" name="action" onClick={this.handleLogin}>Login</Button>
 
                                                 </Col>
                                                 <Col xs="6" className="text-right">
@@ -141,7 +168,7 @@ class Login extends Component {
                             </Col>
 
                         </Row>
-                    </form>
+
 
                 </Container>
             </div>

@@ -10,6 +10,7 @@ import vn.zalopay.project.Config.CustomWebAuthenticationDetails;
 import vn.zalopay.project.Model.UserRole;
 import vn.zalopay.project.Repository.UserRoleRepository;
 
+@CrossOrigin
 @RestController
 public class LoginAPI {
 
@@ -17,11 +18,14 @@ public class LoginAPI {
     private UserRoleRepository userRoleRepository;
 
 
+
     protected CustomWebAuthenticationDetails getUserSession() {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         return auth != null ? (CustomWebAuthenticationDetails) auth.getDetails() : null;
     }
 
+
+    @CrossOrigin
     @RequestMapping(value = "/api/getID", method = RequestMethod.GET)
     public ResponseEntity<?> getUserID() {
         CustomWebAuthenticationDetails user = getUserSession();
@@ -36,17 +40,20 @@ public class LoginAPI {
     }
 
 
+    @CrossOrigin
     @RequestMapping(value = "/api/role",method = RequestMethod.GET)
     public ResponseEntity<String>  roles() {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-        return  new ResponseEntity<>(authentication.getAuthorities() + "", HttpStatus.OK);
+        return  new ResponseEntity<>(authentication.getAuthorities().toString(), HttpStatus.OK);
     }
 
+    @CrossOrigin
     @GetMapping(value = "/api/auth")
     public ResponseEntity<String> auth() {
 
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 
+        System.out.println("\n\n\n\n\n\n"+auth+"\n\n\n\n\n\n\n");
         //auth.getCredentials()
 
         return new ResponseEntity<String>(auth.getAuthorities().toString(),HttpStatus.OK);

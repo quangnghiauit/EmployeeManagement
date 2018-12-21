@@ -31,6 +31,7 @@ public class ExecutiveController {
         return user;
     }
 
+    @CrossOrigin
     @RequestMapping(value = "/getListManager/{id}", method = RequestMethod.GET)
     public @ResponseBody
     List<User> getListManager(@PathVariable Integer id) {
@@ -38,6 +39,7 @@ public class ExecutiveController {
         return executiveService.getListManager(id);
     }
 
+    @CrossOrigin
     @RequestMapping(value = "/addmanager/{id}", method = RequestMethod.POST)
     public @ResponseBody
     void addManager(@RequestBody UserInformation userInformation, @PathVariable Integer id) {
@@ -45,6 +47,7 @@ public class ExecutiveController {
     }
 
 
+    @CrossOrigin
     @RequestMapping(value = "/updatemanager/{id}", method = RequestMethod.PUT)
     public @ResponseBody
     void updateWorker(@RequestBody User user, @PathVariable Integer id) {
@@ -53,6 +56,7 @@ public class ExecutiveController {
     }
 
 
+    @CrossOrigin
     @RequestMapping(value = "/deletemanager/{id}", method = RequestMethod.DELETE)
     public @ResponseBody
     void delete(@PathVariable Integer id) {
@@ -60,12 +64,15 @@ public class ExecutiveController {
         executiveService.delete(id);
     }
 
+    @CrossOrigin
     @RequestMapping(value = "/getListWorkerReview/{id}", method = RequestMethod.GET)
     public @ResponseBody
     List<?> getListWorkerReview(@PathVariable Integer id) {
 
         return executiveService.getListWorkerReview(id);
     }
+
+    @CrossOrigin
     @RequestMapping(value = "/getWorkerInactive", method = RequestMethod.GET)
     public @ResponseBody
     List<User> getWorkerInactive() {
@@ -73,6 +80,7 @@ public class ExecutiveController {
         return executiveService.getWorkerInactive();
     }
 
+    @CrossOrigin
     @RequestMapping(value = "/updatestatusworker/{id}", method = RequestMethod.PUT)
     public @ResponseBody
     void updatestatusworker( @PathVariable Integer id) {

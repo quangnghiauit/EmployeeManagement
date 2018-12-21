@@ -52,10 +52,18 @@ class CheckTickets extends Component {
     approveWorker(workerID) {
         axios({
             method: 'PUT',
-            url: 'http://localhost:9001/updatestatusworker/' + workerID,
-
-            headers: {'Content-Type': 'application/json; charset=utf-8'}
+            url: 'http://localhost:8080/updatestatusworker/' + workerID,
+            withCredentials: true,
+            headers: {
+                Cookies: document.cookie
+            }
         })
+        // axios({
+        //     method: 'PUT',
+        //     url: 'http://localhost:8080/updatestatusworker/' + workerID,
+        //
+        //     headers: {'Content-Type': 'application/json; charset=utf-8'}
+        // })
             .then((response) => {
 
                 alert('Update status worker successfully.');
@@ -72,7 +80,15 @@ class CheckTickets extends Component {
     }
 
     deleteWorker(id) {
-        axios.delete('http://localhost:9001/deletemanager/' + id)
+        axios({
+            method: 'DELETE',
+            url: 'http://localhost:8080/deletemanager/' + id,
+            withCredentials: true,
+            headers: {
+                Cookies: document.cookie
+            }
+        })
+        // axios.delete('http://localhost:8080/deletemanager/' + id)
             .then((response) => {
                 alert('Delete worker successfully.');
                 console.log("deleted");
@@ -83,7 +99,15 @@ class CheckTickets extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:9001/api/getID')
+        axios({
+            method: 'GET',
+            url: 'http://localhost:8080/api/getID',
+            withCredentials: true,
+            headers: {
+                Cookies: document.cookie
+            }
+        })
+        // axios.get('http://localhost:8080/api/getID')
             .then(response => {
                 this.setState({
                     userID: response.data.userID
@@ -95,7 +119,15 @@ class CheckTickets extends Component {
     }
 
     getWorkerInactive() {
-        axios.get('http://localhost:9001/getWorkerInactive')
+        axios({
+            method: 'GET',
+            url: 'http://localhost:8080/getWorkerInactive',
+            withCredentials: true,
+            headers: {
+                Cookies: document.cookie
+            }
+        })
+        // axios.get('http://localhost:8080/getWorkerInactive')
             .then(response => {
 
                 this.setState({

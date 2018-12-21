@@ -62,7 +62,14 @@ class Reviews extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:9001/api/getID')
+        axios({
+            method: 'GET',
+            url: 'http://localhost:8080/api/getID',
+            withCredentials:true,
+            headers: {
+                Cookies: document.cookie
+            }
+        })
             .then(response => {
                 this.setState({
                     userID: response.data.userID
@@ -73,7 +80,14 @@ class Reviews extends Component {
     }
 
     getListWorker() {
-        axios.get('http://localhost:9001/listworker/' + this.state.userID)
+        axios({
+            method: 'GET',
+            url: 'http://localhost:8080/listworker/' + this.state.userID,
+            withCredentials:true,
+            headers: {
+                Cookies: document.cookie
+            }
+        })
             .then(response => {
                 this.setState({
                     user: response.data
@@ -83,14 +97,14 @@ class Reviews extends Component {
     }
 
     addReview() {
-
-        console.log(JSON.stringify(this.state.newReview))
-        console.log('user id',this.state.userID)
         axios({
             method: 'POST',
-            url: 'http://localhost:9001/reviewWorker/' + this.state.userID,
+            url: 'http://localhost:8080/reviewWorker/' + this.state.userID,
             data: JSON.stringify(this.state.newReview),
-            headers: {'Content-Type': 'application/json; charset=utf-8'}
+            withCredentials:true,
+            headers: {
+                Cookies: document.cookie
+            }
         })
             .then((response) => {
                 alert('Add review successfully.');

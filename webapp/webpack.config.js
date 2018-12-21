@@ -31,7 +31,6 @@ module.exports = (env = {}) => {
             '*': 'http://[::1]:8080',
 
         },
-      port: 9001,
       compress: true,
       hot: true,
       open: true

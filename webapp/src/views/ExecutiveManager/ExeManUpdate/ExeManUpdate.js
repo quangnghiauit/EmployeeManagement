@@ -53,9 +53,12 @@ class ExeManUpdate extends Component {
 
         axios({
             method: 'PUT',
-            url: 'http://localhost:9001/updatemanager/' + this.state.managerID,
+            url: 'http://localhost:8080/updatemanager/' + this.state.managerID,
             data: JSON.stringify(this.state.user),
-            headers: {'Content-Type': 'application/json; charset=utf-8'}
+            withCredentials: true,
+            headers: {
+                Cookies: document.cookie
+            }
         })
             .then((response) => {
 
@@ -87,8 +90,16 @@ class ExeManUpdate extends Component {
     }
 
     getUserInfo(managerID) {
+        axios({
+            method: 'GET',
+            url: 'http://localhost:8080/manager/' + managerID,
+            withCredentials: true,
+            headers: {
+                Cookies: document.cookie
+            }
+        })
 
-        axios.get('http://localhost:9001/manager/' + managerID)
+        // axios.get('http://localhost:8080/manager/' + managerID)
             .then(response => {
 
                 this.setState({

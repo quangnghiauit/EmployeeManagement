@@ -58,10 +58,17 @@ class ExeManDashboard extends Component {
     }
 
     deleteManager(id) {
-        axios.delete('http://localhost:9001/deletemanager/' + id)
+        axios({
+            method: 'DELETE',
+            url: 'http://localhost:8080/deletemanager/' + id,
+            withCredentials: true,
+            headers: {
+                Cookies: document.cookie
+            }
+        })
             .then((response) => {
                 alert('Delete manager successfully.');
-                console.log("deleted");
+                //console.log("deleted");
 
 
             })
@@ -69,8 +76,18 @@ class ExeManDashboard extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:9001/api/getID')
+        axios({
+            method: 'GET',
+            url: 'http://localhost:8080/api/getID',
+            withCredentials: true,
+            headers: {
+                Cookies: document.cookie
+            }
+        })
             .then(response => {
+                // console.log("idddddd",response)
+                // console.log("hjfhgdhjdjfdfs",response.data.userID)
+                // console.log(response)
                 this.setState({
                     userID: response.data.userID
                 }, () => this.getListManager());
@@ -81,9 +98,18 @@ class ExeManDashboard extends Component {
     }
 
     getListManager() {
-        axios.get('http://localhost:9001/getListManager/' + this.state.userID)
+        axios({
+            method: 'GET',
+            url: 'http://localhost:8080/getListManager/' + this.state.userID,
+            withCredentials: true,
+            headers: {
+                Cookies: document.cookie
+            }
+        })
+
             .then(response => {
 
+                //console.log("hgdhdhdhjdhjdhj",response.data)
                 this.setState({
                     user: response.data
                 }, () => console.log(this.state.user));
@@ -92,6 +118,7 @@ class ExeManDashboard extends Component {
     }
 
     render() {
+        //console.log("blaaaaaaaa")
         const list = this.state.user;
         const options = [];
         Object.keys(list).map(element => {

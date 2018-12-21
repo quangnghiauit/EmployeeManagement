@@ -52,9 +52,12 @@ class Information extends Component {
 
         axios({
             method: 'PUT',
-            url: 'http://localhost:9001/updateworker/' + this.state.userID,
+            url: 'http://localhost:8080/updateworker/' + this.state.userID,
             data: JSON.stringify(this.state.user),
-            headers: {'Content-Type': 'application/json; charset=utf-8'}
+            withCredentials:true,
+            headers: {
+                Cookies: document.cookie
+            }
         })
             .then((response) => {
 
@@ -79,7 +82,14 @@ class Information extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:9001/api/getID')
+        axios({
+            method: 'GET',
+            url: 'http://localhost:8080/api/getID',
+            withCredentials:true,
+            headers: {
+                Cookies: document.cookie
+            }
+        })
             .then(response => {
                 this.setState({
                     userID: response.data.userID
@@ -91,10 +101,14 @@ class Information extends Component {
     }
 
     getUserInfo() {
-
-
-        //console.log(this.state.userID);
-        axios.get('http://localhost:9001/worker/' + this.state.userID)
+        axios({
+            method: 'GET',
+            url: 'http://localhost:8080/worker/' + this.state.userID,
+            withCredentials:true,
+            headers: {
+                Cookies: document.cookie
+            }
+        })
             .then(response => {
 
                 this.setState({

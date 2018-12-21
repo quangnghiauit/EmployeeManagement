@@ -33,6 +33,7 @@ public class WorkerController {
     private UserRoleRepository userRoleRepository;
 
 
+    @CrossOrigin
     @RequestMapping(value = "/worker/{id}", method = RequestMethod.GET)
     public ResponseEntity<User> getInformationUser(@PathVariable Integer id) {
 
@@ -40,6 +41,7 @@ public class WorkerController {
         return user;
     }
 
+    @CrossOrigin
     @RequestMapping(value = "/updateworker/{id}", method = RequestMethod.PUT)
     public @ResponseBody
     void updateWorker(@RequestBody User user, @PathVariable Integer id) {
@@ -48,6 +50,7 @@ public class WorkerController {
     }
 
 
+    @CrossOrigin
     @RequestMapping(value = "/accounts", method = RequestMethod.POST)
     public @ResponseBody
     UserRole updateAccount(@RequestParam("username") String userName) {
@@ -55,6 +58,7 @@ public class WorkerController {
 
     }
 
+    @CrossOrigin
     @RequestMapping(value = "/getID/{userName}", method = RequestMethod.GET)
     public ResponseEntity<Integer> getUserID(@PathVariable String userName) {
         UserRole userRole = userRoleRepository.findByUserName(userName);
@@ -62,6 +66,7 @@ public class WorkerController {
         return userID;
     }
 
+    @CrossOrigin
     @RequestMapping(value = "/listworker/{id}", method = RequestMethod.GET)
     public @ResponseBody
     List<User> getListWorker(@PathVariable Integer id) {
@@ -70,6 +75,7 @@ public class WorkerController {
     }
 
 
+    @CrossOrigin
     @RequestMapping(value = "/reviewWorker/{id}", method = RequestMethod.POST)
     public @ResponseBody
     void reviewWorker(@PathVariable Integer id, @RequestBody Review review) {

@@ -47,7 +47,14 @@ class ManagerAdd extends Component {
         this.setState({newUser});
     }
     componentDidMount() {
-        axios.get('http://localhost:9001/api/getID')
+        axios({
+            method: 'GET',
+            url: 'http://localhost:8080/api/getID',
+            withCredentials: true,
+            headers: {
+                Cookies: document.cookie
+            }
+        })
             .then(response => {
                 this.setState({
                     userID: response.data.userID
@@ -59,18 +66,17 @@ class ManagerAdd extends Component {
     }
 
     addWorker() {
-
-        console.log(this.state.userID)
-        console.log(this.state.newUser)
         axios({
             method: 'POST',
-            url: 'http://localhost:9001/addworker/' + this.state.userID,
+            url: 'http://localhost:8080/addworker/' + this.state.userID,
             data: JSON.stringify(this.state.newUser),
-            headers: {'Content-Type': 'application/json; charset=utf-8'}
+            withCredentials: true,
+            headers: {
+                Cookies: document.cookie
+            }
         })
             .then((response) => {
                 alert('Sent ticket successfully.');
-                console.log('YEAHHHHH');
             })
             .catch((error) => {
                 console.log(error);

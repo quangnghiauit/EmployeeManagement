@@ -1,7 +1,9 @@
 package vn.zalopay.project.Config;
 import javax.servlet.http.HttpServletRequest;
 import org.springframework.security.web.authentication.WebAuthenticationDetails;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
+@CrossOrigin
 public class CustomWebAuthenticationDetails extends WebAuthenticationDetails {
 
     private String username;
