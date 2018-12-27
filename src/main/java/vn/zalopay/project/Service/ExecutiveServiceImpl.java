@@ -1,6 +1,8 @@
 package vn.zalopay.project.Service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheConfig;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import vn.zalopay.project.Model.Role;
@@ -16,6 +18,7 @@ import java.util.HashSet;
 import java.util.List;
 
 @Service
+@CacheConfig(cacheNames = {"executive"})
 public class ExecutiveServiceImpl implements ExecutiveService {
 
     @Autowired
@@ -36,7 +39,10 @@ public class ExecutiveServiceImpl implements ExecutiveService {
 
 
     @Override
+    @Cacheable
     public List<User> getListManager(Integer id) {
+
+        simulateSlowService();
         return userRepository.getListManagerE(id);
     }
 
@@ -104,7 +110,9 @@ public class ExecutiveServiceImpl implements ExecutiveService {
     }
 
     @Override
+    @Cacheable
     public List<?> getListWorkerReview(Integer id) {
+        simulateSlowService();
         return reviewRepository.getListWorkerReview(id);
     }
 
@@ -123,5 +131,14 @@ public class ExecutiveServiceImpl implements ExecutiveService {
 
 
         oldUser = userRepository.save(oldUser);
+    }
+
+
+    private void simulateSlowService() {
+        try{
+            Thread.sleep(3000L);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
