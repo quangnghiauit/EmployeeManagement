@@ -37,6 +37,13 @@ public class ExecutiveController {
     public @ResponseBody
     List<User> getListManager(@PathVariable Integer id) {
 
+//        List<User> userList= executiveService.getListManagerCache("ListManager" + id);
+//        if(userList!=null) {
+//            return userList;
+//        }
+//        else {
+//            return executiveService.getListManager(id);
+//        }
         return executiveService.getListManager(id);
     }
 

@@ -1,5 +1,10 @@
 package vn.zalopay.project.Service;
 
+import org.redisson.Redisson;
+import org.redisson.api.RBucket;
+import org.redisson.api.RList;
+import org.redisson.api.RedissonClient;
+import org.redisson.config.Config;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.Cacheable;
@@ -14,12 +19,29 @@ import vn.zalopay.project.Repository.UserRepository;
 import vn.zalopay.project.Repository.UserRoleRepository;
 import vn.zalopay.project.Util.UserInformation;
 
+
+import javax.annotation.PostConstruct;
+import java.io.IOException;
 import java.util.HashSet;
 import java.util.List;
 
 @Service
-@CacheConfig(cacheNames = {"executive"})
 public class ExecutiveServiceImpl implements ExecutiveService {
+
+
+
+    private static RedissonClient client;
+
+    @PostConstruct
+    public  void setUp() throws IOException {
+
+        Config config = new Config();
+        config.useSingleServer()
+                .setAddress("127.0.0.1:6379");
+        client= Redisson.create(config);
+    }
+
+
 
     @Autowired
     private UserRepository userRepository;
@@ -39,11 +61,21 @@ public class ExecutiveServiceImpl implements ExecutiveService {
 
 
     @Override
-    @Cacheable
     public List<User> getListManager(Integer id) {
+        //simulateSlowService();
+        RBucket<Object> bucket = client.getBucket("ListManager" + id);
+        if(!bucket.isExists()) {
+            List<User> userList = userRepository.getListManagerE(id);
+            bucket.set(userList);
+        }
 
-        simulateSlowService();
-        return userRepository.getListManagerE(id);
+        return (List<User>) bucket.get();
+    }
+    public  List<User> getListManagerCache(String key){
+        RBucket<List<User>> bucket = client.getBucket(key);
+        List<User> userList = bucket.get();
+        return userList;
+
     }
 
     @Override
@@ -77,9 +109,7 @@ public class ExecutiveServiceImpl implements ExecutiveService {
     public void update(Integer id, User user) {
         // find information user by ID (oldUser) and save new information(newUser)
         User oldUser = userRepository.findOneWithUserID(id);
-
         oldUser.setFullname(user.getFullname());
-
         oldUser.setEmail(user.getEmail());
         oldUser.setBirthDate(user.getBirthDate());
         oldUser.setPhoneNumber(user.getPhoneNumber());
@@ -88,7 +118,6 @@ public class ExecutiveServiceImpl implements ExecutiveService {
         oldUser.setAddress(user.getAddress());
         oldUser.setStatusUser(user.getStatusUser());
         oldUser.setDepartment(user.getDepartment());
-
         oldUser.setTitle(user.getTitle());
         oldUser.setManagerID(user.getManagerID());
         oldUser.setExecutiveID(user.getExecutiveID());
@@ -110,10 +139,13 @@ public class ExecutiveServiceImpl implements ExecutiveService {
     }
 
     @Override
-    @Cacheable
     public List<?> getListWorkerReview(Integer id) {
-        simulateSlowService();
-        return reviewRepository.getListWorkerReview(id);
+        RBucket<Object> bucket= client.getBucket("ListWorkerReview"+id);
+        if(!bucket.isExists()) {
+            List<?> workerListReview = reviewRepository.getListWorkerReview(id);
+            bucket.set(workerListReview);
+        }
+        return (List<?>) bucket.get();
     }
 
     @Override
