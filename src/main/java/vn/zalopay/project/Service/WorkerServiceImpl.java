@@ -1,6 +1,9 @@
 package vn.zalopay.project.Service;
 
 
+import org.redisson.Redisson;
+import org.redisson.api.RedissonClient;
+import org.redisson.config.Config;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,6 +15,8 @@ import vn.zalopay.project.Repository.UserRepository;
 import vn.zalopay.project.Repository.UserRoleRepository;
 import vn.zalopay.project.Util.UserInformation;
 
+import javax.annotation.PostConstruct;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -19,6 +24,15 @@ import java.util.Optional;
 @Service
 public class WorkerServiceImpl implements WorkerService{
 
+    private static RedissonClient client;
+
+    @PostConstruct
+    public void setUp() throws IOException {
+        Config config = new Config();
+        config.useSingleServer()
+                .setAddress("127.0.0.1:6379");
+        client= Redisson.create(config);
+    }
     @Autowired
     private UserRepository userRepository;
 

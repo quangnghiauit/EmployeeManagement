@@ -9,7 +9,7 @@ import java.util.List;
 public interface ExecutiveService {
 
     List<User> getListManager(Integer id);
-    List<User> getListManagerCache(String key);
+//    List<User> getListManagerCache(String key);
     void add(UserInformation userInformation,Integer id);
     void update(Integer id, User newUser);
     void deleteMongo(Integer id);

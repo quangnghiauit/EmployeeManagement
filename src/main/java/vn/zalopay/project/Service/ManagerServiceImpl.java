@@ -1,5 +1,9 @@
 package vn.zalopay.project.Service;
 
+import org.redisson.Redisson;
+import org.redisson.api.RBucket;
+import org.redisson.api.RedissonClient;
+import org.redisson.config.Config;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -15,7 +19,9 @@ import vn.zalopay.project.Repository.UserRepository;
 import vn.zalopay.project.Repository.UserRoleRepository;
 import vn.zalopay.project.Util.UserInformation;
 
+import javax.annotation.PostConstruct;
 import javax.jws.soap.SOAPBinding;
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
@@ -24,15 +30,22 @@ import java.util.Optional;
 @Service
 public class ManagerServiceImpl implements ManagerService {
 
+    private static RedissonClient client;
+
+    @PostConstruct
+    public void setUp() throws IOException {
+        Config config = new Config();
+        config.useSingleServer()
+                .setAddress("127.0.0.1:6379");
+        client= Redisson.create(config);
+    }
+
     @Autowired
     private UserRepository userRepository;
 
 
     @Autowired
     private UserRoleRepository userRoleRepository;
-
-    @Autowired
-    private RoleRepository roleRepository;
 
     @Autowired
     private PasswordEncoder passwordEncoder;
@@ -55,7 +68,12 @@ public class ManagerServiceImpl implements ManagerService {
     @Override
     public List<User> getListWorker(Integer id) {
 
-        return userRepository.getListWorkerM(id);
+    RBucket<Object> bucket = client.getBucket("ListWorker"+id);
+    if (!bucket.isExists()) {
+        List<User> list= userRepository.getListWorkerM(id);
+        bucket.set(list);
+        }
+    return (List<User>) bucket;
     }
 
     @Override

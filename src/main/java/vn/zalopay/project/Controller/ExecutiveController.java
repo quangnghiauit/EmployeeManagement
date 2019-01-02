@@ -27,7 +27,6 @@ public class ExecutiveController {
 
     @RequestMapping(value = "/manager/{id}", method = RequestMethod.GET)
     public ResponseEntity<User> getInformationUser(@PathVariable Integer id) {
-
         ResponseEntity<User> user = new ResponseEntity<>(userRepository.findOneWithUserID(id), HttpStatus.OK);
         return user;
     }
@@ -36,14 +35,6 @@ public class ExecutiveController {
     @RequestMapping(value = "/getListManager/{id}", method = RequestMethod.GET)
     public @ResponseBody
     List<User> getListManager(@PathVariable Integer id) {
-
-//        List<User> userList= executiveService.getListManagerCache("ListManager" + id);
-//        if(userList!=null) {
-//            return userList;
-//        }
-//        else {
-//            return executiveService.getListManager(id);
-//        }
         return executiveService.getListManager(id);
     }
 

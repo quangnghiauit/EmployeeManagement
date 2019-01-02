@@ -71,12 +71,12 @@ public class ExecutiveServiceImpl implements ExecutiveService {
 
         return (List<User>) bucket.get();
     }
-    public  List<User> getListManagerCache(String key){
-        RBucket<List<User>> bucket = client.getBucket(key);
-        List<User> userList = bucket.get();
-        return userList;
-
-    }
+//    public  List<User> getListManagerCache(String key){
+//        RBucket<List<User>> bucket = client.getBucket(key);
+//        List<User> userList = bucket.get();
+//        return userList;
+//
+//    }
 
     @Override
     public void add(UserInformation userInformation, Integer id) {
